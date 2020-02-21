@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XRTarefas.Menu.Master"
+             xmlns:page="clr-namespace:XRTarefas">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <StackLayout>
+                    <Button Text="Activity, Indicator" Clicked="GoActivityIndicatorPage"></Button>
+                    <Button Text="ProgressBar" Clicked="GoProgressBarPage"></Button>
+                    <Button Text="BoxView" Clicked="GoBoxViewPage"></Button>
+                    <Button Text="ButtonPage" Clicked="GoButtonPage"></Button>
+                    <Button Text="LabelPage" Clicked="GoLabelPage"></Button>
+                    <Button Text="EntryEditor" Clicked="GoEntryEditor"></Button>
+                    <Button Text="DatePicker" Clicked="GoDatePicker"></Button>
+                    <Button Text="TimePicker" Clicked="GoTimePicker"></Button>
+                    <Button Text="Picker" Clicked="GoPicker"></Button>
+                    <Button Text="SearchBar" Clicked="GoSearchBar"></Button>
+                    <Button Text="SliderStepper" Clicked="GoSliderStepper"></Button>
+                    <Button Text="Switch" Clicked="GoSwitch"></Button>
+                    <Button Text="Image" Clicked="GoImage"></Button>
+                    <Button Text="ListView" Clicked="GoListView"></Button>
+                    <Button Text="TableViewPage" Clicked="GoTableView"></Button>
+                    <Button Text="WebView" Clicked="GoWebView"></Button>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <page:MainPage />
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

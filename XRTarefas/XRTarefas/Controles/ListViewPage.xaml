@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XRTarefas.Controles.ListViewPage"
+             xmlns:mod="clr-namespace:XRTarefas.Modelo">
+    <ContentPage.Content>
+        <StackLayout>
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type mod:Pessoa}">
+                    <mod:Pessoa Nome="Rafael Angelo" Idade="21"/>
+                    <mod:Pessoa Nome="Gabriel Angelo" Idade="21"/>
+                    <mod:Pessoa Nome="Lucas Angelo" Idade="21"/>
+                    <mod:Pessoa Nome="Guilherme Angelo" Idade="21"/>
+                    <mod:Pessoa Nome="Matheus Angelo" Idade="21"/>
+                    <mod:Pessoa Nome="Luiz Angelo" Idade="21"/>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Nome}"/>
+                            <Label Text="  --  "/>
+                            <Label Text="{Binding Idade}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="LightCoral"/>
+            <ListView x:Name="ListaPessoas">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10">
+                                <Label Text="{Binding Nome}"/>
+                                <Label Text="  --  "/>
+                                <Label Text="{Binding Idade}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XRTarefas.Controles.ImagePage">
+    <ContentPage.Content>
+        <StackLayout x:Name="Container">
+            <Image Source="https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/1223025/large_ce8483775a488f6a0b1d6c5dc0f3a4fe.png" 
+                   Aspect="AspectFill"
+                   IsOpaque="True"
+                   x:Name="image1"/>
+            <Image Source="https://e3ba6e8732e83984.cdn.gocache.net/uploads/image/file/1223025/large_ce8483775a488f6a0b1d6c5dc0f3a4fe.png" 
+                   Aspect="AspectFit"
+                   IsOpaque="True"
+                   x:Name="image2"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
